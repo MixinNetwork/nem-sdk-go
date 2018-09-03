@@ -55,7 +55,7 @@ func (r *NamespaceProvision) Prepare(common Common, network int) base.TxDict {
 		err := errors.New("missing parameter !")
 		panic(err)
 	}
-	kp := model.KeyPairCreate(common.PrivateKey)
+	kp, _ := model.KeyPairCreate(common.PrivateKey)
 	if r.IsMultisig {
 		if r.MultisigAccount != "" {
 			if !utils.IsPublicKeyValid(r.MultisigAccount) {

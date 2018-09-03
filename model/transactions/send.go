@@ -29,10 +29,16 @@ func Send(common Common, entity interface{}, endpoint requests.Client) (requests
 	if !utils.IsHexadecimal(common.PrivateKey) {
 		return resp, errors.New("Private key must be hexadecimal only !")
 	}
-	kp := model.KeyPairCreate(common.PrivateKey)
+	kp, err := model.KeyPairCreate(common.PrivateKey)
+	if err != nil {
+		return resp, err
+	}
 
 	result := utils.SerializeTransaction(entity)
-	signature := kp.Sign(string(result))
+	signature, err := kp.Sign(result)
+	if err != nil {
+		return resp, err
+	}
 
 	obj := requests.RequestAnnounce{
 		Data:      utils.Bt2Hex([]byte(result)),
