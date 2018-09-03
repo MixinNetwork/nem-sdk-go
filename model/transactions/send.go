@@ -1,10 +1,10 @@
 package transactions
 
 import (
-	"github.com/isarq/nem-sdk-go/com/requests"
-	"github.com/isarq/nem-sdk-go/extras"
-	"github.com/isarq/nem-sdk-go/model"
-	"github.com/isarq/nem-sdk-go/utils"
+	"github.com/MixinNetwork/nem-sdk-go/com/requests"
+	"github.com/MixinNetwork/nem-sdk-go/extras"
+	"github.com/MixinNetwork/nem-sdk-go/model"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
 	"github.com/pkg/errors"
 )
 

@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/isarq/nem-sdk-go/com/requests"
-	"github.com/isarq/nem-sdk-go/model"
-	"github.com/isarq/nem-sdk-go/model/objects"
-	"github.com/isarq/nem-sdk-go/model/transactions"
-	"github.com/isarq/nem-sdk-go/utils"
 	"strings"
+
+	"github.com/MixinNetwork/nem-sdk-go/com/requests"
+	"github.com/MixinNetwork/nem-sdk-go/model"
+	"github.com/MixinNetwork/nem-sdk-go/model/objects"
+	"github.com/MixinNetwork/nem-sdk-go/model/transactions"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
 )
 
 func main() {

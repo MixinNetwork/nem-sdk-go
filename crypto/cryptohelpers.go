@@ -2,8 +2,9 @@ package crypto
 
 import (
 	"errors"
+
+	"github.com/MixinNetwork/nem-sdk-go/utils"
 	nacl "github.com/ereyes01/cryptohelper"
-	"github.com/isarq/nem-sdk-go/utils"
 )
 
 // Encode a message

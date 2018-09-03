@@ -1,9 +1,10 @@
 package objects
 
 import (
-	"github.com/isarq/nem-sdk-go/base"
-	"github.com/isarq/nem-sdk-go/model/transactions"
 	"strings"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
+	"github.com/MixinNetwork/nem-sdk-go/model/transactions"
 )
 
 // An un-prepared transfer transaction object

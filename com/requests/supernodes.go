@@ -4,11 +4,12 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/model"
 	"io/ioutil"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/MixinNetwork/nem-sdk-go/model"
 )
 
 type SuperNodeInfo struct {

@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/isarq/nem-sdk-go/model"
+
+	"github.com/MixinNetwork/nem-sdk-go/model"
 )
 
 func main() {

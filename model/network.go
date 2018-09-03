@@ -3,7 +3,8 @@ package model
 import (
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/base"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
 )
 
 // Supported predefined chains.

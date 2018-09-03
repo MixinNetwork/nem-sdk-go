@@ -4,12 +4,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/base"
-	"github.com/isarq/nem-sdk-go/utils"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 	"time"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
 )
 
 // A namespace consists of a namespace object and a database id.

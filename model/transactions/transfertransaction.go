@@ -3,13 +3,14 @@ package transactions
 import (
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/base"
-	"github.com/isarq/nem-sdk-go/com/requests"
-	"github.com/isarq/nem-sdk-go/extras"
-	"github.com/isarq/nem-sdk-go/model"
-	"github.com/isarq/nem-sdk-go/utils"
 	"math"
 	"strings"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
+	"github.com/MixinNetwork/nem-sdk-go/com/requests"
+	"github.com/MixinNetwork/nem-sdk-go/extras"
+	"github.com/MixinNetwork/nem-sdk-go/model"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
 )
 
 type txPrepare struct {

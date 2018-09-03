@@ -3,11 +3,12 @@ package requests
 import (
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/model"
 	"io/ioutil"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/MixinNetwork/nem-sdk-go/model"
 )
 
 // Audit an apostille file

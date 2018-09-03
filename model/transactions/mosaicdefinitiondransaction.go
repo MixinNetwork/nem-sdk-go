@@ -1,12 +1,13 @@
 package transactions
 
 import (
-	"github.com/isarq/nem-sdk-go/base"
-	"github.com/isarq/nem-sdk-go/extras"
-	"github.com/isarq/nem-sdk-go/model"
-	"github.com/isarq/nem-sdk-go/utils"
-	"github.com/pkg/errors"
 	"strings"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
+	"github.com/MixinNetwork/nem-sdk-go/extras"
+	"github.com/MixinNetwork/nem-sdk-go/model"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
+	"github.com/pkg/errors"
 )
 
 type TxDict interface {

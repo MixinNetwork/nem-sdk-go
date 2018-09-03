@@ -4,10 +4,11 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/base"
-	"github.com/isarq/nem-sdk-go/extras"
 	"math"
 	"sort"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
+	"github.com/MixinNetwork/nem-sdk-go/extras"
 )
 
 const (

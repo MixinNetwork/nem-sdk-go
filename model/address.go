@@ -6,12 +6,13 @@ import (
 	"encoding/base32"
 	"encoding/hex"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/external/crypto/ed25519"
-	"github.com/isarq/nem-sdk-go/external/crypto/sha3"
-	"github.com/isarq/nem-sdk-go/utils"
-	"golang.org/x/crypto/ripemd160"
 	"io"
 	"strings"
+
+	"github.com/MixinNetwork/nem-sdk-go/external/crypto/ed25519"
+	"github.com/MixinNetwork/nem-sdk-go/external/crypto/sha3"
+	"github.com/MixinNetwork/nem-sdk-go/utils"
+	"golang.org/x/crypto/ripemd160"
 )
 
 const (

@@ -4,10 +4,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/isarq/nem-sdk-go/base"
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/MixinNetwork/nem-sdk-go/base"
 )
 
 type ID struct {

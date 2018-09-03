@@ -3,11 +3,12 @@ package requests
 import (
 	"encoding/json"
 	"errors"
-	"github.com/isarq/nem-sdk-go/model"
 	"io/ioutil"
 	"net/http"
 	"strings"
 	"time"
+
+	"github.com/MixinNetwork/nem-sdk-go/model"
 )
 
 type MarketInfo struct {
