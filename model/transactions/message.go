@@ -10,9 +10,6 @@ import (
 // param tx - An un-prepared transferTransaction struct point
 // return - A prepared message struct
 func MsgPrepare(common Common, tx *Transfer) base.Message {
-	if tx.Message == "" {
-		return base.Message{}
-	}
 	if tx.MessageType == 2 && common.PrivateKey != "" {
 		return base.Message{
 			Type:    2,
