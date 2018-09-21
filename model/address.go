@@ -59,10 +59,10 @@ func Verify(publicKey, message, sig []byte) bool {
 // param publicKey - A public key
 // param networkId - A network id
 // return - The NEM address
-func ToAddress(publicKey string, networkId int) string {
+func ToAddress(publicKey string, networkId int) (string, error) {
 	pk, err := hex.DecodeString(strings.TrimSpace(publicKey)) //Python
 	if err != nil {
-		panic(err)
+		return "", err
 	}
 
 	h := sha3.SumKeccak256(pk)
@@ -77,7 +77,7 @@ func ToAddress(publicKey string, networkId int) string {
 	h = sha3.SumKeccak256(s)
 
 	address := append(s, h[:4]...)
-	return base32.StdEncoding.EncodeToString(address)
+	return base32.StdEncoding.EncodeToString(address), nil
 }
 
 // KeyPairCreate generates a KeyPair using specified string 32 length or empty
