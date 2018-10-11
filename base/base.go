@@ -181,7 +181,8 @@ type TransactionResponce struct {
 	Message    *Message                       `json:"message,omitempty"`
 	Version    int                            `json:"version,omitempty"`
 	Signer     string                         `json:"signer,omitempty"`
-	OtherTrans Transaction                    `json:"otherTrans,omitempty"`
+	Mosaics    []Mosaic                       `json:"mosaics,omitempty"`
+	OtherTrans TransferTransaction            `json:"otherTrans,omitempty"`
 	Signatures []MultisigSignatureTransaction `json:"signatures,omitempty"`
 }
 
