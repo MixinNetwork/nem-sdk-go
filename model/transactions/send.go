@@ -18,7 +18,7 @@ type Common struct {
 // param entity - A prepared transaction struct
 // param endpoint - An NIS endpoint struct
 // return - An announce transaction promise of the com.requests service
-func Send(common Common, entity interface{}, endpoint requests.Client) (requests.NemAnnounceResult, error) {
+func Send(common Common, entity interface{}, endpoint *requests.Client) (requests.NemAnnounceResult, error) {
 	var resp requests.NemAnnounceResult
 	if extras.IsEmpty(common) || extras.IsEmpty(entity) || extras.IsEmpty(endpoint) {
 		return resp, errors.New("Missing parameter !")

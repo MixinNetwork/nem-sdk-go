@@ -13,7 +13,7 @@ func main() {
 	publicKey := keyPair.PublicString()
 	privateKey := keyPair.PrivateString()
 
-	address := model.ToAddress(publicKey, model.Data.Testnet.ID)
+	address, _ := model.ToAddress(publicKey, model.Data.Testnet.ID)
 
 	fmt.Println("PrivateKey:\t", privateKey)
 
